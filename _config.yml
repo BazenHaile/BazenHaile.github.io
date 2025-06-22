@@ -1,5 +1,5 @@
 # Site Settings
-title: "Bazen Hilemelekot - GIS & Remote Sensing"
+title: "Bazen Amene - GIS & Remote Sensing"
 description: "Portfolio and blog showcasing GIS and Remote Sensing projects"
 url: "https://bazenhaile.github.io"
 baseurl: ""
@@ -10,7 +10,7 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Author
 author:
-  name: "Bazen Hilemelekot"
+  name: "Bazen Amene"
   bio: "GIS Analyst & Remote Sensing Specialist"
   location: "Dublin 3, Ireland"
   email: "bazenhaileam@gmail.com"
