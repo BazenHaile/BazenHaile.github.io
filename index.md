@@ -15,7 +15,7 @@ header:
 excerpt: "GIS Analyst & Remote Sensing Specialist passionate about transforming geospatial data into actionable insights for environmental monitoring and sustainable development."
 
 intro: 
-  - excerpt: 'I combine technical expertise in geospatial analysis with practical problem-solving skills to support decision-making in environmental management, urban planning, and natural resource monitoring.'
+  - excerpt: 'I combine technical expertise in geospatial analysis with practical problem-solving skills to support decision-making in environmental management, urban planning, and natural resource monitoring across Ireland and beyond.'
 
 feature_row:
   - image_path: assets/images/remote-sensing-thumbnail.jpg
@@ -76,24 +76,27 @@ skills_row:
 
 <div class="grid__wrapper">
   <div class="grid__item">
-    <h4><a href="/portfolio/landsat-change-detection/">🔥 New Project: Forest Change Detection</a></h4>
-    <p>Multi-temporal analysis of forest cover changes in County Cork using Landsat time series data.</p>
-    <small><i class="fas fa-calendar-alt" aria-hidden="true"></i> Posted: {{ site.time | date: "%B %Y" }}</small>
+    <h4><a href="/portfolio/forest-change-detection/">🔥 New Project: Forest Change Detection</a></h4>
+    <p>Multi-temporal analysis of forest cover changes in County Cork using Landsat time series data and Google Earth Engine.</p>
+    <small><i class="fas fa-calendar-alt" aria-hidden="true"></i> Posted: June 2025</small>
   </div>
   
   <div class="grid__item">
-    <h4><a href="/notes/gis-fundamentals/">📚 Updated: GIS Fundamentals Guide</a></h4>
-    <p>Comprehensive visual guide to coordinate systems, projections, and spatial data types.</p>
-    <small><i class="fas fa-calendar-alt" aria-hidden="true"></i> Updated: {{ site.time | date: "%B %Y" }}</small>
+    <h4><a href="/notes/coordinate-systems/">📚 Updated: Coordinate Systems Guide</a></h4>
+    <p>Comprehensive visual guide to Irish coordinate systems including ITM and Irish Grid transformations.</p>
+    <small><i class="fas fa-calendar-alt" aria-hidden="true"></i> Updated: June 2025</small>
+  </div>
+  
+  <div class="grid__item">
+    <h4><a href="/gis-projects/">🗺️ Added: Urban Growth Analysis</a></h4>
+    <p>Spatial analysis of Dublin's urban expansion patterns with predictive modeling for future growth scenarios.</p>
+    <small><i class="fas fa-calendar-alt" aria-hidden="true"></i> Added: June 2025</small>
   </div>
 </div>
 
 ---
 
-## Connect With Me
+## Why Choose My Geospatial Expertise?
 
-Ready to discuss geospatial solutions or opportunities in Ireland? 
-
-[📧 Get in Touch](/contact/){: .btn .btn--primary .btn--large}
-[💼 LinkedIn](https://linkedin.com/in/yourprofile){: .btn .btn--inverse}
-[🐙 GitHub](https://github.com/bazenhaile){: .btn .btn--inverse}
+<div class="feature__wrapper">
+  <div class="feature__
