@@ -284,59 +284,61 @@ intro:
 
 ## Featured Work
 
-<div class="feature-card">
-  <div class="card-visual remote-sensing-bg">
-    <div class="signal-waves">
-      <div class="wave"></div>
-      <div class="wave"></div>
-      <div class="wave"></div>
+<div class="featured-cards-grid">
+  <div class="feature-card">
+    <div class="card-visual remote-sensing-bg">
+      <div class="signal-waves">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+      <div class="satellite-icon">🛰️</div>
     </div>
-    <div class="satellite-icon">🛰️</div>
+    <div class="card-content">
+      <h3>🛰️ Remote Sensing Projects</h3>
+      <p>Satellite imagery analysis, environmental monitoring, and change detection using Landsat, Sentinel, and commercial datasets.</p>
+      <a href="/remote-sensing/" class="btn btn--primary">Explore Projects</a>
+    </div>
   </div>
-  <div class="card-content">
-    <h3>🛰️ Remote Sensing Projects</h3>
-    <p>Satellite imagery analysis, environmental monitoring, and change detection using Landsat, Sentinel, and commercial datasets.</p>
-    <a href="/remote-sensing/" class="btn btn--primary">Explore Projects</a>
-  </div>
-</div>
 
-<div class="feature-card">
-  <div class="card-visual gis-projects-bg">
-    <div class="map-layers">
-      <div class="layer"></div>
-      <div class="layer"></div>
-      <div class="layer"></div>
+  <div class="feature-card">
+    <div class="card-visual gis-projects-bg">
+      <div class="map-layers">
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+      </div>
+      <div class="map-icon">🗺️</div>
     </div>
-    <div class="map-icon">🗺️</div>
+    <div class="card-content">
+      <h3>🗺️ GIS Analysis & Mapping</h3>
+      <p>Spatial analysis, network modeling, and cartographic design for infrastructure and planning applications.</p>
+      <a href="/gis-projects/" class="btn btn--primary">View Projects</a>
+    </div>
   </div>
-  <div class="card-content">
-    <h3>🗺️ GIS Analysis & Mapping</h3>
-    <p>Spatial analysis, network modeling, and cartographic design for infrastructure and planning applications.</p>
-    <a href="/gis-projects/" class="btn btn--primary">View Projects</a>
-  </div>
-</div>
 
-<div class="feature-card">
-  <div class="card-visual learning-notes-bg">
-    <div class="knowledge-particles">
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
+  <div class="feature-card">
+    <div class="card-visual learning-notes-bg">
+      <div class="knowledge-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
+      <div class="book-stack">
+        <div class="book"></div>
+        <div class="book"></div>
+        <div class="book"></div>
+        <div class="book"></div>
+        <div class="book"></div>
+      </div>
     </div>
-    <div class="book-stack">
-      <div class="book"></div>
-      <div class="book"></div>
-      <div class="book"></div>
-      <div class="book"></div>
-      <div class="book"></div>
+    <div class="card-content">
+      <h3>📚 Learning Resources</h3>
+      <p>Visual tutorials and reference materials for GIS and Remote Sensing concepts, tools, and workflows.</p>
+      <a href="/notes/" class="btn btn--primary">Browse Notes</a>
     </div>
-  </div>
-  <div class="card-content">
-    <h3>📚 Learning Resources</h3>
-    <p>Visual tutorials and reference materials for GIS and Remote Sensing concepts, tools, and workflows.</p>
-    <a href="/notes/" class="btn btn--primary">Browse Notes</a>
   </div>
 </div>
 
