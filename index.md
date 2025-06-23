@@ -50,6 +50,8 @@ skills_row:
 
 {% include feature_row id="intro" type="center" %}
 
+
+
 ## Featured Work
 
 {% include feature_row %}
@@ -57,6 +59,8 @@ skills_row:
 ## Technical Skills
 
 {% include feature_row id="skills_row" %}
+
+
 
 
 
