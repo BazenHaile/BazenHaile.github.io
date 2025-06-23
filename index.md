@@ -18,13 +18,26 @@ intro:
 ---
 
 <style>
+.featured-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 40px 0;
+}
+
+@media (max-width: 768px) {
+  .featured-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .feature-card {
   background: white;
   border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.1);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 .feature-card:hover {
