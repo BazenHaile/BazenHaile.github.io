@@ -99,4 +99,70 @@ skills_row:
 ## Why Choose My Geospatial Expertise?
 
 <div class="feature__wrapper">
-  <div class="feature__
+  <div class="feature__item">
+    <div class="archive__item">
+      <h3>🎯 Practical Solutions</h3>
+      <p>Focus on real-world applications that deliver measurable results for environmental monitoring, urban planning, and business decision-making.</p>
+    </div>
+  </div>
+
+  <div class="feature__item">
+    <div class="archive__item">
+      <h3>🇮🇪 Irish Context</h3>
+      <p>Deep understanding of Irish data sources, coordinate systems, and regulatory requirements for seamless project integration.</p>
+    </div>
+  </div>
+
+  <div class="feature__item">
+    <div class="archive__item">
+      <h3>📊 Data-Driven Results</h3>
+      <p>Rigorous analytical workflows with proper validation, documentation, and reproducible methodologies for reliable outcomes.</p>
+    </div>
+  </div>
+</div>
+
+---
+
+## Industry Applications
+
+<div class="grid__wrapper">
+  <div class="grid__item">
+    <h4>🌱 Environmental Monitoring</h4>
+    <ul>
+      <li>Climate change impact assessment</li>
+      <li>Biodiversity conservation planning</li>
+      <li>Water quality monitoring</li>
+      <li>Carbon stock estimation</li>
+    </ul>
+  </div>
+  
+  <div class="grid__item">
+    <h4>🏙️ Urban Planning</h4>
+    <ul>
+      <li>Smart city development</li>
+      <li>Transportation optimization</li>
+      <li>Infrastructure planning</li>
+      <li>Housing development analysis</li>
+    </ul>
+  </div>
+  
+  <div class="grid__item">
+    <h4>🚜 Agriculture & Rural</h4>
+    <ul>
+      <li>Precision agriculture</li>
+      <li>Crop health monitoring</li>
+      <li>Land use optimization</li>
+      <li>Rural accessibility analysis</li>
+    </ul>
+  </div>
+</div>
+
+---
+
+## Connect With Me
+
+Ready to discuss geospatial solutions or opportunities in Ireland? 
+
+[📧 Get in Touch](/contact/){: .btn .btn--primary .btn--large}
+[💼 LinkedIn](https://linkedin.com/in/yourprofile){: .btn .btn--inverse}
+[🐙 GitHub](https://github.com/bazenhaile){: .btn .btn--inverse}
