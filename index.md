@@ -238,27 +238,162 @@ intro:
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  gap: 25px;
   margin: 40px 0;
 }
 
 .skill-card {
   background: white;
-  padding: 25px;
-  border-radius: 10px;
+  padding: 30px 25px;
+  border-radius: 15px;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .skill-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.skill-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  transition: height 0.3s ease;
+}
+
+.skill-card:hover::before {
+  height: 8px;
+}
+
+.skill-card:nth-child(1)::before {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.skill-card:nth-child(2)::before {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.skill-card:nth-child(3)::before {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
 }
 
 .skill-card h4 {
   color: #1e3d59;
   margin-bottom: 15px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.skill-card .skill-icon {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  display: block;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.skill-card:nth-child(1) .skill-icon { animation-delay: 0s; }
+.skill-card:nth-child(2) .skill-icon { animation-delay: 0.3s; }
+.skill-card:nth-child(3) .skill-icon { animation-delay: 0.6s; }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.highlight-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.highlight-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+}
+
+.highlight-card:nth-child(1)::before {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+}
+
+.highlight-card:nth-child(2)::before {
+  background: linear-gradient(135deg, #a55eea 0%, #8e44ad 100%);
+}
+
+.highlight-card:nth-child(3)::before {
+  background: linear-gradient(135deg, #26de81 0%, #20bf6b 100%);
+}
+
+.highlight-card .card-icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+  display: inline-block;
+  animation: rotate 4s ease-in-out infinite;
+}
+
+.highlight-card:nth-child(1) .card-icon { animation-delay: 0s; }
+.highlight-card:nth-child(2) .card-icon { animation-delay: 1s; }
+.highlight-card:nth-child(3) .card-icon { animation-delay: 2s; }
+
+@keyframes rotate {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  75% { transform: rotate(-5deg); }
+}
+
+.highlight-card h3 {
+  color: #1e3d59;
+  margin: 0 0 10px 0;
   font-size: 1.1em;
+  font-weight: 600;
+}
+
+.highlight-card h4 {
+  margin: 0 0 15px 0;
+  font-size: 1em;
+}
+
+.highlight-card h4 a {
+  color: #2c5aa0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.highlight-card h4 a:hover {
+  color: #1e3d59;
+}
+
+.highlight-card p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
 }
 
 .ireland-highlight {
@@ -359,17 +494,20 @@ intro:
 
 <div class="skills-grid">
   <div class="skill-card">
-    <h4>🖥️ Software Expertise</h4>
+    <span class="skill-icon">🖥️</span>
+    <h4>Software Expertise</h4>
     <p><strong>ArcGIS Pro</strong> • <strong>QGIS</strong> • <strong>Google Earth Engine</strong> • <strong>ENVI</strong> • <strong>PostGIS</strong></p>
   </div>
   
   <div class="skill-card">
-    <h4>💻 Programming Skills</h4>
+    <span class="skill-icon">💻</span>
+    <h4>Programming Skills</h4>
     <p><strong>Python</strong> • <strong>R</strong> • <strong>JavaScript</strong> • <strong>SQL</strong> • <strong>ArcPy</strong></p>
   </div>
   
   <div class="skill-card">
-    <h4>🛰️ Data Platforms</h4>
+    <span class="skill-icon">🛰️</span>
+    <h4>Data Platforms</h4>
     <p><strong>Landsat</strong> • <strong>Sentinel</strong> • <strong>MODIS</strong> • <strong>Planet</strong> • <strong>OSI Ireland</strong></p>
   </div>
 </div>
@@ -383,29 +521,26 @@ intro:
 
 ## Recent Highlights
 
-<div class="feature__wrapper">
-  <div class="feature__item">
-    <div class="archive__item">
-      <h3>🔥 Latest Project</h3>
-      <h4><a href="/portfolio/forest-change/">Forest Change Detection - County Cork</a></h4>
-      <p>Multi-temporal analysis using Landsat time series and Google Earth Engine to monitor forest cover changes.</p>
-    </div>
+<div class="highlights-grid">
+  <div class="highlight-card">
+    <span class="card-icon">🔥</span>
+    <h3>Latest Project</h3>
+    <h4><a href="/portfolio/forest-change/">Forest Change Detection - County Cork</a></h4>
+    <p>Multi-temporal analysis using Landsat time series and Google Earth Engine to monitor forest cover changes.</p>
   </div>
 
-  <div class="feature__item">
-    <div class="archive__item">
-      <h3>📚 New Tutorial</h3>
-      <h4><a href="/notes/irish-coordinates/">Irish Coordinate Systems Guide</a></h4>
-      <p>Comprehensive reference for ITM and Irish Grid systems with practical transformation examples.</p>
-    </div>
+  <div class="highlight-card">
+    <span class="card-icon">📚</span>
+    <h3>New Tutorial</h3>
+    <h4><a href="/notes/irish-coordinates/">Irish Coordinate Systems Guide</a></h4>
+    <p>Comprehensive reference for ITM and Irish Grid systems with practical transformation examples.</p>
   </div>
 
-  <div class="feature__item">
-    <div class="archive__item">
-      <h3>🐍 Code Update</h3>
-      <h4><a href="/notes/python-gis/">Python for GIS Workflows</a></h4>
-      <p>Essential Python libraries and automation scripts for geospatial analysis and processing.</p>
-    </div>
+  <div class="highlight-card">
+    <span class="card-icon">🐍</span>
+    <h3>Code Update</h3>
+    <h4><a href="/notes/python-gis/">Python for GIS Workflows</a></h4>
+    <p>Essential Python libraries and automation scripts for geospatial analysis and processing.</p>
   </div>
 </div>
 
