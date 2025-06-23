@@ -1,5 +1,5 @@
 # Site Settings
-title: "Bazen Amene - GIS & Remote Sensing"
+title: "Bazen Haile - GIS & Remote Sensing"
 description: "Portfolio and blog showcasing GIS and Remote Sensing projects"
 url: "https://bazenhaile.github.io"
 baseurl: ""
@@ -10,10 +10,10 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Author
 author:
-  name: "Bazen Amene"
+  name: "Bazen Haile"
   bio: "GIS Analyst & Remote Sensing Specialist"
-  location: "Dublin 3, Ireland"
-  email: "bazenhaileam@gmail.com"
+  location: "Your Location"
+  email: "your-email@example.com"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
@@ -31,6 +31,23 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/bazenhaile"
+
+# Navigation
+main:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Portfolio"
+    url: /portfolio/
+  - title: "Remote Sensing"
+    url: /remote-sensing/
+  - title: "GIS Projects"
+    url: /gis-projects/
+  - title: "Learning Notes"
+    url: /notes/
+  - title: "Contact"
+    url: /contact/
 
 # Collections
 collections:
