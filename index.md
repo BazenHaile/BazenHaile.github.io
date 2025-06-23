@@ -61,7 +61,7 @@ skills_row:
 ---
 
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 10px; text-align: center; margin: 40px 0;">
-  <h2 style="color: white; margin-bottom: 20px;">🇮🇪 Ireland-Focused Expertise</h2>
+  <h2 style="color: white; margin-bottom: 20px;"> Ireland-Focused Expertise</h2>
   <p style="font-size: 1.1em; margin-bottom: 20px;">Experienced with Irish coordinate systems (ITM, Irish Grid), Ordnance Survey Ireland data, and familiar with environmental challenges specific to Ireland.</p>
   <p style="margin-bottom: 30px;">Seeking opportunities with Irish organizations in environmental monitoring, urban planning, and geospatial technology.</p>
   <a href="/about/" class="btn btn--inverse btn--large">Learn More About My Background</a>
