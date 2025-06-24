@@ -94,6 +94,19 @@ excerpt: "Geospatial projects showcasing remote sensing analysis, climate monito
   margin-bottom: 10px;
 }
 
+.project-meta {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.project-description {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
 .tag {
   display: inline-block;
   background: #f0f2f5;
@@ -102,6 +115,15 @@ excerpt: "Geospatial projects showcasing remote sensing analysis, climate monito
   border-radius: 15px;
   font-size: 0.8em;
   margin: 2px 4px 2px 0;
+}
+
+.btn-group {
+  margin-top: 15px;
+}
+
+.btn-group a {
+  margin-right: 10px;
+  margin-bottom: 5px;
 }
 </style>
 
@@ -136,26 +158,47 @@ excerpt: "Geospatial projects showcasing remote sensing analysis, climate monito
     </div>
     <div class="project-content">
       <h3>{{ project.title }}</h3>
-      <div style="color: #666; font-size: 0.9em; margin-bottom: 15px;">{{ project.category }} • {{ project.year }}</div>
-      <div style="color: #444; line-height: 1.6; margin-bottom: 20px;">{{ project.excerpt }}</div>
+      <div class="project-meta">{{ project.category | default: 'GIS Project' }} • {{ project.year | default: '2024' }}</div>
+      <div class="project-description">{{ project.excerpt }}</div>
       <div style="margin-bottom: 20px;">
         {% for tag in project.tags %}
           <span class="tag">{{ tag }}</span>
         {% endfor %}
       </div>
-      <a href="{{ project.url }}" class="btn btn--primary">View Project</a>
-      {% if project.external_url %}
-        <a href="{{ project.external_url }}" target="_blank" class="btn btn--info">🔗 Live Demo</a>
-      {% endif %}
+      <div class="btn-group">
+        <a href="{{ project.url }}" class="btn btn--primary">View Project</a>
+        {% if project.external_url %}
+          <a href="{{ project.external_url }}" target="_blank" class="btn btn--info">🔗 Live Demo</a>
+        {% endif %}
+      </div>
     </div>
   </div>
 {% endfor %}
+</div>
+
+## Project Statistics
+
+<div style="background: #f8f9fa; padding: 30px; border-radius: 15px; margin: 40px 0; text-align: center;">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+    <div>
+      <h3 style="color: #1e3d59; font-size: 2em; margin-bottom: 5px;">{{ site.portfolio.size }}</h3>
+      <p style="color: #666; margin: 0;">Projects Completed</p>
+    </div>
+    <div>
+      <h3 style="color: #1e3d59; font-size: 2em; margin-bottom: 5px;">4+</h3>
+      <p style="color: #666; margin: 0;">Technologies Used</p>
+    </div>
+    <div>
+      <h3 style="color: #1e3d59; font-size: 2em; margin-bottom: 5px;">2024</h3>
+      <p style="color: #666; margin: 0;">Latest Projects</p>
+    </div>
+  </div>
 </div>
 
 ---
 
 ## 🚀 **About This Portfolio**
 
-This collection showcases my journey in geospatial technology, from academic research at Maynooth University to professional applications in climate analysis and educational content development. Each project demonstrates practical application of GIS and remote sensing skills.
+This collection showcases my journey in geospatial technology, from academic research at Maynooth University to professional applications in climate analysis and educational content development. Each project demonstrates practical application of GIS and remote sensing skills using industry-standard tools.
 
 **Want to collaborate?** [Get in touch →](/contact/)
