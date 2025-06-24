@@ -444,7 +444,7 @@ intro:
     </div>
     <div class="card-content">
       <h3>🛰️ Remote Sensing Projects</h3>
-      <p>Satellite imagery analysis using ERDAS Imagine, SNAP, and Pix4D for land cover monitoring, agricultural planning, and environmental assessment.</p>
+      <p>Satellite imagery analysis using ERDAS Imagine, SNAP, and Pix4D for land cover monitoring, and agricultural planning.</p>
       <a href="/remote-sensing/" class="btn btn--primary">Explore Projects</a>
     </div>
   </div>
