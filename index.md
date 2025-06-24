@@ -6,7 +6,7 @@ header:
   overlay_filter: "0.3"
   actions:
     - label: "View Portfolio"
-      url: "/portfolio/"
+      url: "https://arcg.is/1LCzOi"
       btn_class: "btn--primary btn--large"
     - label: "Download CV"
       url: "/assets/cv/Bazen Amene 2025 CV.pdf"
