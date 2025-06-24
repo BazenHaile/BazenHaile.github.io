@@ -9,7 +9,7 @@ header:
       url: "/portfolio/"
       btn_class: "btn--primary btn--large"
     - label: "Download CV"
-      url: "/assets/cv/bazen-haile-cv.pdf"
+      url: "/assets/cv/Bazen Amene 2025 CV.pdf"
       btn_class: "btn--inverse btn--large"
 excerpt: "MSc GIS & Remote Sensing graduate from Maynooth University with expertise in spatial analysis, satellite imagery processing, and geospatial technology applications for environmental monitoring and sustainable development."
 
