@@ -1,6 +1,6 @@
 # Site Settings
 title: "Bazen Haile - GIS & Remote Sensing"
-description: "Portfolio and blog showcasing GIS and Remote Sensing projects"
+description: "MSc GIS & Remote Sensing graduate showcasing geospatial projects and educational content"
 url: "https://bazenhaile.github.io"
 baseurl: ""
 
@@ -11,9 +11,9 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 # Site Author
 author:
   name: "Bazen Haile"
-  bio: "GIS Analyst & Remote Sensing Specialist"
-  location: "Your Location"
-  email: "your-email@example.com"
+  bio: "MSc GIS & Remote Sensing | Maynooth University Graduate | Geospatial Analyst"
+  location: "Dublin, Ireland"
+  email: "bazenhaileam@gmail.com"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
@@ -21,6 +21,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/bazenhaile"
+    - label: "Portfolio"
+      icon: "fas fa-fw fa-briefcase"
+      url: "/portfolio/"
 
 # Site Footer
 footer:
@@ -31,6 +34,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/bazenhaile"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:bazenhaileam@gmail.com"
 
 # Navigation
 main:
@@ -83,6 +89,21 @@ defaults:
       layout: single
       author_profile: false
       share: true
+      sidebar:
+        nav: "portfolio"
+
+# Sidebar Navigation for Portfolio
+portfolio:
+  - title: "Project Details"
+    children:
+      - title: "Overview"
+        url: "#project-overview"
+      - title: "Technical Approach"
+        url: "#technical-approach"
+      - title: "Key Findings"
+        url: "#key-findings"
+      - title: "Impact & Applications"
+        url: "#impact--applications"
 
 # Plugins
 plugins:
@@ -105,3 +126,14 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# SEO and Social
+social:
+  type: Person
+  name: Bazen Haile
+  links:
+    - "https://linkedin.com/in/yourprofile"
+    - "https://github.com/bazenhaile"
+
+# Analytics (uncomment when ready)
+# google_analytics: "UA-XXXXXXXXX-X"
