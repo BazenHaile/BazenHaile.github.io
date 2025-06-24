@@ -11,10 +11,10 @@ header:
     - label: "Download CV"
       url: "/assets/cv/bazen-haile-cv.pdf"
       btn_class: "btn--inverse btn--large"
-excerpt: "GIS Analyst & Remote Sensing Specialist passionate about transforming geospatial data into actionable insights for environmental monitoring and sustainable development."
+excerpt: "MSc GIS & Remote Sensing graduate from Maynooth University with expertise in spatial analysis, satellite imagery processing, and geospatial technology applications for environmental monitoring and sustainable development."
 
 intro: 
-  - excerpt: 'Welcome to my portfolio and learning repository where I showcase projects and share knowledge with the geospatial community.'
+  - excerpt: 'Welcome to my portfolio and learning repository where I showcase projects from my MSc studies and professional work, sharing knowledge with the geospatial community.'
 ---
 
 <style>
@@ -444,7 +444,7 @@ intro:
     </div>
     <div class="card-content">
       <h3>🛰️ Remote Sensing Projects</h3>
-      <p>Satellite imagery analysis, environmental monitoring, and change detection using Landsat, Sentinel, and commercial datasets.</p>
+      <p>Satellite imagery analysis using ERDAS Imagine, SNAP, and Pix4D for land cover monitoring, agricultural planning, and environmental assessment.</p>
       <a href="/remote-sensing/" class="btn btn--primary">Explore Projects</a>
     </div>
   </div>
@@ -460,7 +460,7 @@ intro:
     </div>
     <div class="card-content">
       <h3>🗺️ GIS Analysis & Mapping</h3>
-      <p>Spatial analysis, network modeling, and cartographic design for infrastructure and planning applications.</p>
+      <p>Spatial analysis and cartographic design using ArcGIS Pro, QGIS, and PostGIS for educational content and research applications.</p>
       <a href="/gis-projects/" class="btn btn--primary">View Projects</a>
     </div>
   </div>
@@ -484,7 +484,7 @@ intro:
     </div>
     <div class="card-content">
       <h3>📚 Learning Resources</h3>
-      <p>Visual tutorials and reference materials for GIS and Remote Sensing concepts, tools, and workflows.</p>
+      <p>Educational materials and tutorials developed during MSc studies and the 5*S project, including Story Maps and interactive content.</p>
       <a href="/notes/" class="btn btn--primary">Browse Notes</a>
     </div>
   </div>
@@ -495,27 +495,27 @@ intro:
 <div class="skills-grid">
   <div class="skill-card">
     <span class="skill-icon">🖥️</span>
-    <h4>Software Expertise</h4>
-    <p><strong>ArcGIS Pro</strong> • <strong>QGIS</strong> • <strong>Google Earth Engine</strong> • <strong>ENVI</strong> • <strong>PostGIS</strong></p>
-  </div>
-  
-  <div class="skill-card">
-    <span class="skill-icon">💻</span>
-    <h4>Programming Skills</h4>
-    <p><strong>Python</strong> • <strong>R</strong> • <strong>JavaScript</strong> • <strong>SQL</strong> • <strong>ArcPy</strong></p>
+    <h4>GIS Software</h4>
+    <p><strong>ArcGIS Pro</strong> • <strong>QGIS</strong> • <strong>ArcGIS Online</strong> • <strong>ArcGIS Dashboards</strong> • <strong>Story Maps</strong></p>
   </div>
   
   <div class="skill-card">
     <span class="skill-icon">🛰️</span>
-    <h4>Data Platforms</h4>
-    <p><strong>Landsat</strong> • <strong>Sentinel</strong> • <strong>MODIS</strong> • <strong>Planet</strong> • <strong>OSI Ireland</strong></p>
+    <h4>Remote Sensing</h4>
+    <p><strong>ERDAS Imagine</strong> • <strong>SNAP</strong> • <strong>Pix4D Mapper</strong> • <strong>Copernicus Imagery</strong> • <strong>GDAL</strong></p>
+  </div>
+  
+  <div class="skill-card">
+    <span class="skill-icon">💻</span>
+    <h4>Programming & Development</h4>
+    <p><strong>Python</strong> • <strong>Django</strong> • <strong>JavaScript</strong> • <strong>SQL</strong> • <strong>PostgreSQL/PostGIS</strong></p>
   </div>
 </div>
 
 <div class="ireland-highlight">
-  <h2>Ireland-Focused Expertise</h2>
-  <p style="font-size: 1.1em; margin-bottom: 20px;">Experienced with Irish coordinate systems (ITM, Irish Grid), Ordnance Survey Ireland data, and familiar with environmental challenges specific to Ireland.</p>
-  <p style="margin-bottom: 30px;">Seeking opportunities with Irish organizations in environmental monitoring, urban planning, and geospatial technology.</p>
+  <h2>🇮🇪 Ireland-Based Experience</h2>
+  <p style="font-size: 1.1em; margin-bottom: 20px;">MSc graduate from Maynooth University with hands-on experience working on Irish geospatial projects including the 5*S educational initiative with Ordnance Survey Ireland.</p>
+  <p style="margin-bottom: 30px;">Contributed to Science Foundation Ireland-funded projects and collaborated with Esri Ireland and Society of Chartered Surveyors Ireland.</p>
   <a href="/about/" class="btn btn--inverse btn--large">Learn More About My Background</a>
 </div>
 
@@ -523,33 +523,33 @@ intro:
 
 <div class="highlights-grid">
   <div class="highlight-card">
-    <span class="card-icon">🔥</span>
-    <h3>Latest Project</h3>
-    <h4><a href="/portfolio/forest-change/">Forest Change Detection - County Cork</a></h4>
-    <p>Multi-temporal analysis using Landsat time series and Google Earth Engine to monitor forest cover changes.</p>
+    <span class="card-icon">🎓</span>
+    <h3>Latest Achievement</h3>
+    <h4><a href="/portfolio/5s-project/">5*S Educational Project</a></h4>
+    <p>Developed interactive educational content using ArcGIS Online for Junior Cert students, analyzing Copernicus satellite imagery.</p>
   </div>
 
   <div class="highlight-card">
     <span class="card-icon">📚</span>
-    <h3>New Tutorial</h3>
-    <h4><a href="/notes/irish-coordinates/">Irish Coordinate Systems Guide</a></h4>
-    <p>Comprehensive reference for ITM and Irish Grid systems with practical transformation examples.</p>
+    <h3>New Certification</h3>
+    <h4><a href="/notes/gdal-mastery/">GDAL Tools Mastery</a></h4>
+    <p>Completed intensive hands-on course with Spatial Thoughts covering GDAL & OGR command-line workflows and automation.</p>
   </div>
 
   <div class="highlight-card">
-    <span class="card-icon">🐍</span>
-    <h3>Code Update</h3>
-    <h4><a href="/notes/python-gis/">Python for GIS Workflows</a></h4>
-    <p>Essential Python libraries and automation scripts for geospatial analysis and processing.</p>
+    <span class="card-icon">🏆</span>
+    <h3>Recognition</h3>
+    <h4><a href="/about/">Ireland Fellows Programme</a></h4>
+    <p>Selected as one of five fellows from Ethiopia in 2020 for this prestigious leadership development programme.</p>
   </div>
 </div>
 
 <div class="connect-section">
   <h2>Let's Connect</h2>
-  <p>Interested in geospatial collaboration or have questions about my work?</p>
+  <p>Based in Dublin and interested in geospatial collaboration or career opportunities in Ireland?</p>
   
   <div class="btn-group">
-    <a href="mailto:your.email@example.com" class="btn btn--primary">📧 Email Me</a>
+    <a href="mailto:bazenhaileam@gmail.com" class="btn btn--primary">📧 Email Me</a>
     <a href="https://linkedin.com/in/yourprofile" class="btn btn--info">💼 LinkedIn</a>
     <a href="https://github.com/bazenhaile" class="btn btn--inverse">🐙 GitHub</a>
   </div>
