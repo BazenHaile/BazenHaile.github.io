@@ -508,12 +508,12 @@ intro:
   <div class="skill-card">
     <span class="skill-icon">💻</span>
     <h4>Programming & Development</h4>
-    <p><strong>Python</strong> • <strong>Django</strong> • <strong>JavaScript</strong> • <strong>SQL</strong> • <strong>PostgreSQL/PostGIS</strong></p>
+    <p><strong>Python</strong> • <strong>Django</strong> • <strong>SQL</strong> • <strong>PostgreSQL/PostGIS</strong></p>
   </div>
 </div>
 
 <div class="ireland-highlight">
-  <h2>🇮🇪 Ireland-Based Experience</h2>
+  <h2>Ireland-Based Experience</h2>
   <p style="font-size: 1.1em; margin-bottom: 20px;">MSc graduate from Maynooth University with hands-on experience working on Irish geospatial projects including the 5*S educational initiative with Ordnance Survey Ireland.</p>
   <p style="margin-bottom: 30px;">Contributed to Science Foundation Ireland-funded projects and collaborated with Esri Ireland and Society of Chartered Surveyors Ireland.</p>
   <a href="/about/" class="btn btn--inverse btn--large">Learn More About My Background</a>
