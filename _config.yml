@@ -6,7 +6,7 @@ baseurl: ""
 
 # Theme
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "default"
 
 # Site Author
 author:
@@ -38,23 +38,6 @@ footer:
       icon: "fas fa-fw fa-envelope"
       url: "mailto:bazenhaileam@gmail.com"
 
-# Navigation
-main:
-  - title: "Home"
-    url: /
-  - title: "About"
-    url: /about/
-  - title: "Portfolio"
-    url: /portfolio/
-  - title: "Remote Sensing"
-    url: /remote-sensing/
-  - title: "GIS Projects"
-    url: /gis-projects/
-  - title: "Learning Notes"
-    url: /notes/
-  - title: "Contact"
-    url: /contact/
-
 # Collections
 collections:
   portfolio:
@@ -76,7 +59,7 @@ defaults:
       related: true
   # _pages
   - scope:
-      path: ""
+      path: "_pages"
       type: pages
     values:
       layout: single
@@ -89,21 +72,6 @@ defaults:
       layout: single
       author_profile: false
       share: true
-      sidebar:
-        nav: "portfolio"
-
-# Sidebar Navigation for Portfolio
-portfolio:
-  - title: "Project Details"
-    children:
-      - title: "Overview"
-        url: "#project-overview"
-      - title: "Technical Approach"
-        url: "#technical-approach"
-      - title: "Key Findings"
-        url: "#key-findings"
-      - title: "Impact & Applications"
-        url: "#impact--applications"
 
 # Plugins
 plugins:
@@ -112,6 +80,10 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+
+# Include pages
+include:
+  - _pages
 
 # Archives
 category_archive:
