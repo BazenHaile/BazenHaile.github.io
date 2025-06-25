@@ -1,5 +1,5 @@
 # Site Settings
-title: "Bazen Haile - GIS & Remote Sensing"
+title: "Bazen Amene - GIS & Remote Sensing"
 description: "MSc GIS & Remote Sensing graduate showcasing geospatial projects and educational content"
 url: "https://bazenhaile.github.io"
 baseurl: ""
@@ -10,7 +10,7 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Author
 author:
-  name: "Bazen Haile"
+  name: "Bazen Amene"
   bio: "MSc GIS & Remote Sensing | Maynooth University Graduate | Geospatial Analyst"
   location: "Dublin, Ireland"
   email: "bazenhaileam@gmail.com"
