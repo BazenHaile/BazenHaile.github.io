@@ -8,9 +8,11 @@ header:
     - label: "View Portfolio"
       url: "https://storymaps.arcgis.com/stories/c17fd354712e43a58c23dbbd8db4f417"
       btn_class: "btn--primary btn--large"
+      target: "_blank"
     - label: "Download CV"
       url: "/assets/cv/Bazen Amene 2025 CV.pdf"
       btn_class: "btn--inverse btn--large"
+      target: "_blank"
 excerpt: "MSc GIS & Remote Sensing graduate from Maynooth University with expertise in spatial analysis, satellite imagery processing, and geospatial technology applications for environmental monitoring and sustainable development."
 
 intro: 
