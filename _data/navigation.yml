@@ -1,0 +1,15 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Portfolio"
+    url: /portfolio/
+  - title: "Remote Sensing"
+    url: /remote-sensing/
+  - title: "GIS Projects"
+    url: /gis-projects/
+  - title: "Learning Notes"
+    url: /notes/
+  - title: "Contact"
+    url: /contact/
