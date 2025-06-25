@@ -40,7 +40,6 @@ Welcome to my remote sensing portfolio, featuring satellite imagery analysis, la
 **Tools:** SNAP, ArcGIS Pro  
 **Data:** Copernicus Sentinel-2  
 **Application:** Temperature and drought pattern analysis  
-
 *Interactive StoryMap showcasing satellite-based climate analysis*
 
 ### 🌊 Water Quality Assessment
