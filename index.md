@@ -1,563 +1,557 @@
+
 ---
 layout: splash
 permalink: /
 header:
-  overlay_color: "#0a1628"
-  overlay_filter: "0.5"
-  overlay_image: "/assets/images/ireland-satellite.jpg"
+  overlay_color: "#1e3d59"
+  overlay_filter: "0.3"
   actions:
-    - label: "📊 View Portfolio"
+    - label: "View Portfolio"
       url: "https://storymaps.arcgis.com/stories/c17fd354712e43a58c23dbbd8db4f417"
       btn_class: "btn--primary btn--large"
-    - label: "📄 Download CV"
-      url: "/assets/cv/Bazen_Amene_2025_CV.pdf"
+    - label: "Download CV"
+      url: "/assets/cv/Bazen Amene 2025 CV.pdf"
       btn_class: "btn--inverse btn--large"
-excerpt: "MSc GIS & Remote Sensing graduate from Maynooth University specializing in spatial analysis, satellite imagery processing, and geospatial solutions for environmental monitoring and sustainable development."
+excerpt: "MSc GIS & Remote Sensing graduate from Maynooth University with expertise in spatial analysis, satellite imagery processing, and geospatial technology applications for environmental monitoring and sustainable development."
 
 intro: 
-  - excerpt: 'Transforming spatial data into actionable insights for a sustainable future. Based in Dublin, Ireland 🇮🇪'
+  - excerpt: 'Welcome to my portfolio and learning repository where I showcase projects from my MSc studies and professional work, sharing knowledge with the geospatial community.'
 ---
 
 <style>
-/* Modern CSS Variables */
-:root {
-  --primary-color: #0a1628;
-  --secondary-color: #2a4865;
-  --accent-color: #00c896;
-  --accent-secondary: #00a676;
-  --text-dark: #1a1a1a;
-  --text-light: #6c757d;
-  --bg-light: #f8f9fa;
-  --shadow-sm: 0 2px 10px rgba(0,0,0,0.08);
-  --shadow-md: 0 5px 20px rgba(0,0,0,0.12);
-  --shadow-lg: 0 10px 30px rgba(0,0,0,0.15);
-  --border-radius: 16px;
-}
-
-/* Hero Section Enhancement */
-.page__hero--overlay {
-  min-height: 500px;
-  background-attachment: fixed;
-}
-
-/* Modern Card Grid */
-.modern-grid {
+.featured-cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  margin: 60px 0;
+  margin: 40px 0;
 }
 
-/* Feature Cards with Glassmorphism */
+@media (max-width: 768px) {
+  .featured-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .feature-card {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-sm);
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
   overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 0;
 }
 
 .feature-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
 }
 
-.card-header {
-  height: 180px;
+.card-visual {
+  height: 200px;
   position: relative;
-  background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
 }
 
-.card-icon {
-  font-size: 4rem;
-  color: rgba(255, 255, 255, 0.9);
-  z-index: 2;
-  animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-}
-
-/* Animated Background Patterns */
-.pattern-dots {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0.1;
-  background-image: radial-gradient(circle, #fff 1px, transparent 1px);
-  background-size: 20px 20px;
-  animation: slide 20s linear infinite;
-}
-
-@keyframes slide {
-  from { transform: translateX(0); }
-  to { transform: translateX(20px); }
-}
-
 .card-content {
-  padding: 30px;
+  padding: 25px;
+  text-align: center;
 }
 
 .card-content h3 {
-  color: var(--primary-color);
-  font-size: 1.4rem;
-  margin-bottom: 15px;
-  font-weight: 700;
+  margin: 0 0 15px 0;
+  color: #1e3d59;
+  font-size: 1.3em;
 }
 
 .card-content p {
-  color: var(--text-light);
-  line-height: 1.7;
+  color: #666;
   margin-bottom: 20px;
+  line-height: 1.6;
 }
 
-/* Modern Buttons */
-.btn--modern {
-  background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-secondary) 100%);
-  color: white;
-  padding: 12px 28px;
-  border-radius: 30px;
-  text-decoration: none;
-  display: inline-block;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 200, 150, 0.3);
+/* Remote Sensing Card */
+.remote-sensing-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
-.btn--modern:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 200, 150, 0.4);
-  color: white;
+.satellite-icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  animation: orbit 8s linear infinite;
+  position: relative;
+  z-index: 10;
 }
 
-/* Skills Section */
-.skills-container {
-  background: var(--bg-light);
-  border-radius: var(--border-radius);
-  padding: 40px;
-  margin: 60px 0;
+.signal-waves {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wave {
+  position: absolute;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  animation: pulse 3s ease-out infinite;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wave:nth-child(1) { width: 60px; height: 60px; animation-delay: 0s; }
+.wave:nth-child(2) { width: 100px; height: 100px; animation-delay: 0.5s; }
+.wave:nth-child(3) { width: 140px; height: 140px; animation-delay: 1s; }
+
+@keyframes orbit {
+  0% { transform: rotate(0deg) translateX(15px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(15px) rotate(-360deg); }
+}
+
+@keyframes pulse {
+  0% { opacity: 1; transform: translate(-50%, -50%) scale(0.8); }
+  100% { opacity: 0; transform: translate(-50%, -50%) scale(1.2); }
+}
+
+/* GIS Projects Card */
+.gis-projects-bg {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+.map-layers {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+
+.layer {
+  position: absolute;
+  border-radius: 8px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.layer:nth-child(1) {
+  width: 120px;
+  height: 80px;
+  background: rgba(255,255,255,0.4);
+  top: 20px;
+  left: 20px;
+  animation-delay: 0s;
+}
+
+.layer:nth-child(2) {
+  width: 100px;
+  height: 60px;
+  background: rgba(255,255,255,0.3);
+  top: 40px;
+  left: 40px;
+  animation-delay: 1s;
+}
+
+.layer:nth-child(3) {
+  width: 80px;
+  height: 50px;
+  background: rgba(255,255,255,0.2);
+  top: 60px;
+  left: 60px;
+  animation-delay: 2s;
+}
+
+.map-icon {
+  font-size: 60px;
+  z-index: 10;
+  position: relative;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+}
+
+/* Learning Notes Card */
+.learning-notes-bg {
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+}
+
+.book-stack {
+  position: relative;
+  z-index: 10;
+}
+
+.book {
+  width: 60px;
+  height: 8px;
+  margin: 3px;
+  border-radius: 2px;
+  animation: stack 4s ease-in-out infinite;
+}
+
+.book:nth-child(1) { background: #ff6b6b; animation-delay: 0s; }
+.book:nth-child(2) { background: #4ecdc4; animation-delay: 0.2s; }
+.book:nth-child(3) { background: #45b7d1; animation-delay: 0.4s; }
+.book:nth-child(4) { background: #96ceb4; animation-delay: 0.6s; }
+.book:nth-child(5) { background: #feca57; animation-delay: 0.8s; }
+
+.knowledge-particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(255,255,255,0.6);
+  border-radius: 50%;
+  animation: sparkle 3s ease-in-out infinite;
+}
+
+.particle:nth-child(1) { top: 20%; left: 30%; animation-delay: 0s; }
+.particle:nth-child(2) { top: 40%; left: 70%; animation-delay: 0.5s; }
+.particle:nth-child(3) { top: 60%; left: 20%; animation-delay: 1s; }
+.particle:nth-child(4) { top: 80%; left: 80%; animation-delay: 1.5s; }
+.particle:nth-child(5) { top: 30%; left: 50%; animation-delay: 2s; }
+
+@keyframes stack {
+  0%, 100% { transform: translateX(0px); }
+  50% { transform: translateX(5px); }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0); }
+  50% { opacity: 1; transform: scale(1); }
 }
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
-  margin-top: 30px;
+  margin: 40px 0;
 }
 
-.skill-category {
+.skill-card {
   background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: var(--shadow-sm);
-  transition: all 0.3s ease;
-  border-left: 4px solid var(--accent-color);
-}
-
-.skill-category:hover {
-  transform: translateX(5px);
-  box-shadow: var(--shadow-md);
-}
-
-.skill-category h4 {
-  color: var(--primary-color);
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 1.2rem;
-}
-
-.skill-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.skill-tag {
-  background: rgba(0, 200, 150, 0.1);
-  color: var(--accent-secondary);
-  padding: 6px 16px;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  border: 1px solid rgba(0, 200, 150, 0.3);
-}
-
-/* Recent Projects Section */
-.projects-showcase {
-  margin: 60px 0;
-}
-
-.project-card {
-  background: white;
-  border-radius: var(--border-radius);
-  overflow: hidden;
-  box-shadow: var(--shadow-sm);
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-}
-
-.project-card:hover {
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-5px);
-}
-
-.project-image {
-  height: 200px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  position: relative;
-  overflow: hidden;
-}
-
-.project-badge {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 5px 15px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--primary-color);
-}
-
-.project-content {
-  padding: 25px;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.project-content h3 {
-  color: var(--primary-color);
-  margin-bottom: 15px;
-  font-size: 1.3rem;
-}
-
-.project-meta {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 15px;
-  font-size: 0.9rem;
-  color: var(--text-light);
-}
-
-.project-meta span {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-/* Call to Action Section */
-.cta-section {
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-  color: white;
-  padding: 60px 40px;
-  border-radius: var(--border-radius);
+  padding: 30px 25px;
+  border-radius: 15px;
   text-align: center;
-  margin: 60px 0;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
 }
 
-.cta-section::before {
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.skill-card::before {
   content: '';
   position: absolute;
-  top: -50%;
-  right: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-  animation: pulse 4s ease-in-out infinite;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  transition: height 0.3s ease;
 }
 
-@keyframes pulse {
-  0%, 100% { transform: scale(0.8); opacity: 0.5; }
-  50% { transform: scale(1.2); opacity: 0.8; }
+.skill-card:hover::before {
+  height: 8px;
 }
 
-.cta-content {
+.skill-card:nth-child(1)::before {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.skill-card:nth-child(2)::before {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.skill-card:nth-child(3)::before {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.skill-card h4 {
+  color: #1e3d59;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.skill-card .skill-icon {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  display: block;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.skill-card:nth-child(1) .skill-icon { animation-delay: 0s; }
+.skill-card:nth-child(2) .skill-icon { animation-delay: 0.3s; }
+.skill-card:nth-child(3) .skill-icon { animation-delay: 0.6s; }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.highlight-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
   position: relative;
-  z-index: 1;
+  overflow: hidden;
 }
 
-.cta-section h2 {
+.highlight-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.highlight-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+}
+
+.highlight-card:nth-child(1)::before {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+}
+
+.highlight-card:nth-child(2)::before {
+  background: linear-gradient(135deg, #a55eea 0%, #8e44ad 100%);
+}
+
+.highlight-card:nth-child(3)::before {
+  background: linear-gradient(135deg, #26de81 0%, #20bf6b 100%);
+}
+
+.highlight-card .card-icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+  display: inline-block;
+  animation: rotate 4s ease-in-out infinite;
+}
+
+.highlight-card:nth-child(1) .card-icon { animation-delay: 0s; }
+.highlight-card:nth-child(2) .card-icon { animation-delay: 1s; }
+.highlight-card:nth-child(3) .card-icon { animation-delay: 2s; }
+
+@keyframes rotate {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  75% { transform: rotate(-5deg); }
+}
+
+.highlight-card h3 {
+  color: #1e3d59;
+  margin: 0 0 10px 0;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.highlight-card h4 {
+  margin: 0 0 15px 0;
+  font-size: 1em;
+}
+
+.highlight-card h4 a {
+  color: #2c5aa0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.highlight-card h4 a:hover {
+  color: #1e3d59;
+}
+
+.highlight-card p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.ireland-highlight {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.ireland-highlight h2 {
   color: white;
   margin-bottom: 20px;
-  font-size: 2.5rem;
 }
 
-.cta-section p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-  opacity: 0.95;
-}
-
-.cta-buttons {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* Contact Card */
-.contact-card {
-  background: white;
-  border-radius: var(--border-radius);
+.connect-section {
+  background: #f8f9fa;
   padding: 40px;
-  box-shadow: var(--shadow-md);
+  border-radius: 12px;
   text-align: center;
-  max-width: 600px;
-  margin: 60px auto;
+  margin: 40px 0;
 }
 
-.contact-info {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 30px;
-  flex-wrap: wrap;
+.btn-group {
+  margin: 20px 0;
 }
 
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--text-dark);
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.contact-item:hover {
-  color: var(--accent-color);
-  transform: translateY(-2px);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .modern-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
-  .cta-section h2 {
-    font-size: 2rem;
-  }
-  
-  .contact-info {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-/* Animation for page load */
-.fade-in {
-  animation: fadeIn 0.8s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+.btn-group a {
+  margin: 0 10px;
+  display: inline-block;
 }
 </style>
 
 {% include feature_row id="intro" type="center" %}
 
-<section class="modern-grid fade-in">
-  <div class="feature-card">
-    <div class="card-header">
-      <div class="pattern-dots"></div>
-      <div class="card-icon">🛰️</div>
-    </div>
-    <div class="card-content">
-      <h3>Remote Sensing Analysis</h3>
-      <p>Expert in satellite imagery processing using ERDAS Imagine, SNAP, and Pix4D for environmental monitoring, agricultural assessment, and land cover classification.</p>
-      <a href="/remote-sensing/" class="btn--modern">Explore Projects →</a>
-    </div>
-  </div>
+## Featured Work
 
+<div class="featured-cards-grid">
   <div class="feature-card">
-    <div class="card-header">
-      <div class="pattern-dots"></div>
-      <div class="card-icon">🗺️</div>
+    <div class="card-visual remote-sensing-bg">
+      <div class="signal-waves">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+      <div class="satellite-icon">🛰️</div>
     </div>
     <div class="card-content">
-      <h3>GIS Solutions</h3>
-      <p>Proficient in spatial analysis and cartographic design using ArcGIS Pro, QGIS, and PostGIS for urban planning, environmental assessment, and data visualization.</p>
-      <a href="/gis-projects/" class="btn--modern">View Portfolio →</a>
+      <h3>🛰️ Remote Sensing Projects</h3>
+      <p>Satellite imagery analysis using ERDAS Imagine, SNAP, and Pix4D for land cover monitoring, and agricultural planning.</p>
+      <a href="/remote-sensing/" class="btn btn--primary">Explore Projects</a>
     </div>
   </div>
 
   <div class="feature-card">
-    <div class="card-header">
-      <div class="pattern-dots"></div>
-      <div class="card-icon">📚</div>
+    <div class="card-visual gis-projects-bg">
+      <div class="map-layers">
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+      </div>
+      <div class="map-icon">🗺️</div>
     </div>
     <div class="card-content">
-      <h3>Educational Resources</h3>
-      <p>Comprehensive learning materials and tutorials developed during MSc studies, including interactive Story Maps and technical documentation.</p>
-      <a href="/notes/" class="btn--modern">Browse Resources →</a>
+      <h3>🗺️ GIS Analysis & Mapping</h3>
+      <p>Spatial analysis and cartographic design using ArcGIS Pro, QGIS, and PostGIS for educational content and research applications.</p>
+      <a href="/gis-projects/" class="btn btn--primary">View Projects</a>
     </div>
   </div>
-</section>
 
-<section class="skills-container fade-in">
-  <h2 style="text-align: center; color: var(--primary-color); margin-bottom: 10px;">Technical Expertise</h2>
-  <p style="text-align: center; color: var(--text-light); margin-bottom: 40px;">Comprehensive skillset in modern geospatial technologies</p>
-  
-  <div class="skills-grid">
-    <div class="skill-category">
-      <h4><span>💻</span> GIS Software</h4>
-      <div class="skill-tags">
-        <span class="skill-tag">ArcGIS Pro</span>
-        <span class="skill-tag">QGIS</span>
-        <span class="skill-tag">ArcGIS Online</span>
-        <span class="skill-tag">PostGIS</span>
-        <span class="skill-tag">Story Maps</span>
+  <div class="feature-card">
+    <div class="card-visual learning-notes-bg">
+      <div class="knowledge-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
+      <div class="book-stack">
+        <div class="book"></div>
+        <div class="book"></div>
+        <div class="book"></div>
+        <div class="book"></div>
+        <div class="book"></div>
       </div>
     </div>
-    
-    <div class="skill-category">
-      <h4><span>🛰️</span> Remote Sensing</h4>
-      <div class="skill-tags">
-        <span class="skill-tag">ERDAS Imagine</span>
-        <span class="skill-tag">SNAP</span>
-        <span class="skill-tag">Pix4D</span>
-        <span class="skill-tag">Copernicus Hub</span>
-        <span class="skill-tag">GDAL</span>
-      </div>
+    <div class="card-content">
+      <h3>📚 Learning Resources</h3>
+      <p>Educational materials and tutorials developed during MSc studies and the 5*S project, including Story Maps and interactive content.</p>
+      <a href="/notes/" class="btn btn--primary">Browse Notes</a>
     </div>
-    
-    <div class="skill-category">
-      <h4><span>⚡</span> Programming</h4>
-      <div class="skill-tags">
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">SQL</span>
-        <span class="skill-tag">Django</span>
-        <span class="skill-tag">JavaScript</span>
-        <span class="skill-tag">R</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="projects-showcase fade-in">
-  <h2 style="text-align: center; color: var(--primary-color); margin-bottom: 40px;">Recent Projects</h2>
-  
-  <div class="modern-grid">
-    <div class="project-card">
-      <div class="project-image">
-        <div class="pattern-dots"></div>
-        <span class="project-badge">🏆 Featured</span>
-      </div>
-      <div class="project-content">
-        <h3>5*S Educational Initiative</h3>
-        <div class="project-meta">
-          <span>📅 2024</span>
-          <span>🏢 Ordnance Survey Ireland</span>
-        </div>
-        <p>Developed interactive educational content using ArcGIS Online for Junior Certificate students, analyzing Copernicus satellite imagery for environmental education.</p>
-        <a href="/portfolio/5s-project/" class="btn--modern" style="margin-top: auto;">Learn More →</a>
-      </div>
-    </div>
-    
-    <div class="project-card">
-      <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-        <div class="pattern-dots"></div>
-        <span class="project-badge">📊 Analysis</span>
-      </div>
-      <div class="project-content">
-        <h3>Dublin Urban Growth Analysis</h3>
-        <div class="project-meta">
-          <span>📅 2024</span>
-          <span>🎓 MSc Thesis</span>
-        </div>
-        <p>Multi-temporal analysis of urban expansion patterns using Landsat imagery and machine learning classification techniques to support sustainable city planning.</p>
-        <a href="/portfolio/dublin-urban-growth/" class="btn--modern" style="margin-top: auto;">View Project →</a>
-      </div>
-    </div>
-    
-    <div class="project-card">
-      <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-        <div class="pattern-dots"></div>
-        <span class="project-badge">🌍 Remote Sensing</span>
-      </div>
-      <div class="project-content">
-        <h3>Drought Impact Assessment</h3>
-        <div class="project-meta">
-          <span>📅 2024</span>
-          <span>🛰️ Sentinel-2</span>
-        </div>
-        <p>Vegetation health monitoring using NDVI time-series analysis to assess drought impacts on agricultural regions in Ireland.</p>
-        <a href="/portfolio/heatwave-drought/" class="btn--modern" style="margin-top: auto;">Explore →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="cta-section fade-in">
-  <div class="cta-content">
-    <h2>Ready to Collaborate?</h2>
-    <p>I'm actively seeking opportunities in GIS and Remote Sensing in Ireland.<br>Let's discuss how I can contribute to your team's success.</p>
-    <div class="cta-buttons">
-      <a href="mailto:bazenhaileam@gmail.com" class="btn btn--inverse btn--large">📧 Get in Touch</a>
-      <a href="/assets/cv/Bazen_Amene_2025_CV.pdf" class="btn btn--primary btn--large">📄 Download CV</a>
-    </div>
-  </div>
-</section>
-
-<div class="contact-card fade-in">
-  <h3 style="color: var(--primary-color); margin-bottom: 10px;">Connect With Me</h3>
-  <p style="color: var(--text-light);">Based in Dublin, Ireland 🇮🇪 | Available for opportunities</p>
-  
-  <div class="contact-info">
-    <a href="mailto:bazenhaileam@gmail.com" class="contact-item">
-      <span>📧</span>
-      <span>Email</span>
-    </a>
-    <a href="https://linkedin.com/in/yourprofile" class="contact-item">
-      <span>💼</span>
-      <span>LinkedIn</span>
-    </a>
-    <a href="https://github.com/bazenhaile" class="contact-item">
-      <span>🐙</span>
-      <span>GitHub</span>
-    </a>
   </div>
 </div>
 
-<script>
-// Add fade-in animation on scroll
-document.addEventListener('DOMContentLoaded', function() {
-  const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-  };
+## Technical Skills
 
-  const observer = new IntersectionObserver(function(entries) {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
-      }
-    });
-  }, observerOptions);
+<div class="skills-grid">
+  <div class="skill-card">
+    <span class="skill-icon">🖥️</span>
+    <h4>GIS Software</h4>
+    <p><strong>ArcGIS Pro</strong> • <strong>QGIS</strong> • <strong>ArcGIS Online</strong> • <strong>ArcGIS Dashboards</strong> • <strong>Story Maps</strong></p>
+  </div>
+  
+  <div class="skill-card">
+    <span class="skill-icon">🛰️</span>
+    <h4>Remote Sensing</h4>
+    <p><strong>ERDAS Imagine</strong> • <strong>SNAP</strong> • <strong>Pix4D Mapper</strong> • <strong>Copernicus Imagery</strong> • <strong>GDAL</strong></p>
+  </div>
+  
+  <div class="skill-card">
+    <span class="skill-icon">💻</span>
+    <h4>Programming & Development</h4>
+    <p><strong>Python</strong> • <strong>Django</strong> • <strong>SQL</strong> • <strong>PostgreSQL/PostGIS</strong></p>
+  </div>
+</div>
 
-  document.querySelectorAll('.fade-in').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(el);
-  });
-});
-</script>
+<div class="ireland-highlight">
+  <h2>Ireland-Based Experience</h2>
+  <p style="font-size: 1.1em; margin-bottom: 20px;">MSc graduate from Maynooth University with hands-on experience working on Irish geospatial projects including the 5*S educational initiative with Ordnance Survey Ireland.</p>
+  <p style="margin-bottom: 30px;">Contributed to Science Foundation Ireland-funded projects and collaborated with Esri Ireland and Society of Chartered Surveyors Ireland.</p>
+  <a href="/about/" class="btn btn--inverse btn--large">Learn More About My Background</a>
+</div>
+
+## Recent Highlights
+
+<div class="highlights-grid">
+  <div class="highlight-card">
+    <span class="card-icon">🎓</span>
+    <h3>Latest Achievement</h3>
+    <h4><a href="/portfolio/5s-project/">5*S Educational Project</a></h4>
+    <p>Developed interactive educational content using ArcGIS Online for Junior Cert students, analyzing Copernicus satellite imagery.</p>
+  </div>
+
+  <div class="highlight-card">
+    <span class="card-icon">📚</span>
+    <h3>New Certification</h3>
+    <h4><a href="/notes/gdal-mastery/">GDAL Tools Mastery</a></h4>
+    <p>Completed intensive hands-on course with Spatial Thoughts covering GDAL & OGR command-line workflows and automation.</p>
+  </div>
+
+  <div class="highlight-card">
+    <span class="card-icon">🏆</span>
+    <h3>Recognition</h3>
+    <h4><a href="/about/">Ireland Fellows Programme</a></h4>
+    <p>Selected as one of five fellows from Ethiopia in 2020 for this prestigious leadership development programme.</p>
+  </div>
+</div>
+
+<div class="connect-section">
+  <h2>Let's Connect</h2>
+  <p>Based in Dublin and interested in geospatial collaboration or career opportunities in Ireland?</p>
+  
+  <div class="btn-group">
+    <a href="mailto:bazenhaileam@gmail.com" class="btn btn--primary">📧 Email Me</a>
+    <a href="https://linkedin.com/in/yourprofile" class="btn btn--info">💼 LinkedIn</a>
+    <a href="https://github.com/bazenhaile" class="btn btn--inverse">🐙 GitHub</a>
+  </div>
+</div>
