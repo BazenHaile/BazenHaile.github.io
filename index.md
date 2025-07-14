@@ -10,7 +10,7 @@ header:
       url: "/portfolio/"
       btn_class: "btn--primary btn--large"
     - label: "Download CV"
-      url: "/assets/cv/Bazen_Amene_2025_CV.pdf"
+      url: "/assets/cv/Bazen Amene 2025 CV.pdf"
       btn_class: "btn--inverse btn--large"
 excerpt: "MSc GIS & Remote Sensing graduate from Maynooth University specializing in spatial analysis, satellite imagery processing, and geospatial solutions for environmental monitoring and sustainable development."
 
@@ -351,6 +351,6 @@ intro:
   <p>I'm actively seeking opportunities in GIS and Remote Sensing in Ireland.<br>Let's discuss how I can contribute to your organization's spatial data initiatives.</p>
   <div class="btn-group">
     <a href="/contact/" class="btn btn--inverse btn--large">Get in Touch</a>
-    <a href="/assets/cv/Bazen_Amene_2025_CV.pdf" class="btn btn--primary btn--large">Download CV</a>
+    <a href="/assets/cv/Bazen Amene 2025 CV.pdf" class="btn btn--primary btn--large">Download CV</a>
   </div>
 </section>
