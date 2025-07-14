@@ -17,8 +17,7 @@ minimal_mistakes_skin: "air" # Changed to 'air' for a cleaner, professional look
 # Site Author
 author:
   name: "Bazen Amene"
-  # avatar: "/assets/images/Pictures/profilePic.jfif"
-  avatar: # Temporarily removed - convert JFIF to JPG/PNG for browser compatibility
+  avatar: "/assets/images/Pictures/profilePic.jpg"
   bio: "MSc GIS & Remote Sensing | Maynooth University | Environmental Geospatial Analyst | Dublin, Ireland 🇮🇪"
   location: "Dublin, Ireland"
   email: "bazenhaileam@gmail.com"
