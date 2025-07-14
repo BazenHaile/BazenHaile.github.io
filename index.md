@@ -4,7 +4,6 @@ permalink: /
 header:
   overlay_color: "#0a1628"
   overlay_filter: "0.6"
-  overlay_image: "/assets/images/ireland-satellite.jpg"
   actions:
     - label: "View Portfolio"
       url: "/portfolio/"
