@@ -7,7 +7,7 @@ url: "https://bazenhaile.github.io"
 baseurl: ""
 repository: "bazenhaile/bazenhaile.github.io"
 logo: "/assets/images/logo.png"
-masthead_title: "Bazen Amene"
+
 breadcrumbs: true
 
 # Theme
