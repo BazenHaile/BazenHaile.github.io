@@ -6,8 +6,8 @@ description: "MSc GIS & Remote Sensing graduate from Maynooth University, Irelan
 url: "https://bazenhaile.github.io"
 baseurl: ""
 repository: "bazenhaile/bazenhaile.github.io"
-logo: "/assets/images/logo.png"
-masthead_title: "Bazen Amene"
+# logo: "/assets/images/logo.png"  # Commented out to avoid duplication
+masthead_title: " "  # Set to space to keep header height but hide duplicate text
 breadcrumbs: true
 
 # Theme
@@ -17,7 +17,8 @@ minimal_mistakes_skin: "air" # Changed to 'air' for a cleaner, professional look
 # Site Author
 author:
   name: "Bazen Amene"
-  avatar: "/assets/images/Pictures/profilePic.jfif"
+  # avatar: "/assets/images/Pictures/profilePic.jfif"
+  avatar: # Temporarily removed - convert JFIF to JPG/PNG for browser compatibility
   bio: "MSc GIS & Remote Sensing | Maynooth University | Environmental Geospatial Analyst | Dublin, Ireland 🇮🇪"
   location: "Dublin, Ireland"
   email: "bazenhaileam@gmail.com"
