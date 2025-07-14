@@ -1,1 +1,44 @@
 
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+/* Custom styles for author sidebar */
+.author__bio {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  max-height: 200px;
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  line-height: 1.5;
+  padding-right: 5px;
+}
+
+/* Ensure bio text displays vertically */
+.sidebar .author__bio {
+  display: block;
+  width: 100%;
+}
+
+/* Style scrollbar if needed */
+.author__bio::-webkit-scrollbar {
+  width: 4px;
+}
+
+.author__bio::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.author__bio::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 2px;
+}
+
+.author__bio::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
