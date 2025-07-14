@@ -1,36 +1,46 @@
 # Site Settings
-title: "Bazen Amene - GIS & Remote Sensing"
-description: "MSc GIS & Remote Sensing graduate showcasing geospatial projects and educational content"
+title: "Bazen Amene | GIS & Remote Sensing Professional"
+title_separator: "|"
+name: "Bazen Amene"
+description: "MSc GIS & Remote Sensing graduate from Maynooth University, Ireland. Specializing in satellite imagery analysis, spatial data science, and environmental monitoring. Available for opportunities in Dublin and across Ireland."
 url: "https://bazenhaile.github.io"
 baseurl: ""
+repository: "bazenhaile/bazenhaile.github.io"
+logo: "/assets/images/logo.png"
+masthead_title: "Bazen Amene"
+breadcrumbs: true
 
 # Theme
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "default"
+minimal_mistakes_skin: "air" # Changed to 'air' for a cleaner, professional look
 
 # Site Author
 author:
   name: "Bazen Amene"
-  bio: "MSc GIS & Remote Sensing | Maynooth University Graduate | Geospatial Analyst"
+  avatar: "/assets/images/profile-photo.jpg"
+  bio: "MSc GIS & Remote Sensing | Maynooth University | Environmental Geospatial Analyst | Dublin, Ireland 🇮🇪"
   location: "Dublin, Ireland"
   email: "bazenhaileam@gmail.com"
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:bazenhaileam@gmail.com"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/yourprofile"
+      url: "https://linkedin.com/in/bazen-amene" # Update with your actual LinkedIn
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/bazenhaile"
-    - label: "Portfolio"
-      icon: "fas fa-fw fa-briefcase"
-      url: "/portfolio/"
+    - label: "ORCID"
+      icon: "fab fa-fw fa-orcid"
+      url: "https://orcid.org/0000-0000-0000-0000" # Update with your ORCID if you have one
 
 # Site Footer
 footer:
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/yourprofile"
+      url: "https://linkedin.com/in/bazen-amene"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/bazenhaile"
@@ -38,11 +48,45 @@ footer:
       icon: "fas fa-fw fa-envelope"
       url: "mailto:bazenhaileam@gmail.com"
 
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+  - _portfolio
+
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+
 # Collections
 collections:
   portfolio:
     output: true
-    permalink: /:collection/:name/
+    permalink: /:collection/:path/
+  notes:
+    output: true
+    permalink: /notes/:path/
 
 # Defaults
 defaults:
@@ -57,6 +101,7 @@ defaults:
       comments: false
       share: true
       related: true
+      show_date: true
   # _pages
   - scope:
       path: "_pages"
@@ -70,8 +115,19 @@ defaults:
       type: portfolio
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       share: true
+      classes: wide
+  # _notes
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      toc: true
+      toc_sticky: true
 
 # Plugins
 plugins:
@@ -80,10 +136,15 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-seo-tag
 
-# Include pages
-include:
-  - _pages
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
 
 # Archives
 category_archive:
@@ -99,13 +160,62 @@ compress_html:
   ignore:
     envs: development
 
-# SEO and Social
+# Pagination
+paginate: 5
+paginate_path: /page:num/
+
+# Markdown Processing
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Outputting
+permalink: /:categories/:title/
+timezone: Europe/Dublin
+
+# SEO Related
+google_site_verification: # Add your Google verification code when ready
+bing_site_verification: # Add your Bing verification code when ready
+alexa_site_verification: # Add your Alexa verification code when ready
+yandex_site_verification: # Add your Yandex verification code when ready
+
+# Social Sharing
+twitter:
+  username: # Add your Twitter username if you have one
+og_image: "/assets/images/og-image.jpg" # Create a default image for social sharing
+
+# Analytics
+analytics:
+  provider: # "google-gtag" when you're ready
+  google:
+    tracking_id: # Add your Google Analytics tracking ID
+    anonymize_ip: false
+
+# Site Search
+search: true
+search_full_content: true
+search_provider: lunr
+
+# SEO Tags
 social:
   type: Person
-  name: Bazen Haile
+  name: Bazen Amene
   links:
-    - "https://linkedin.com/in/yourprofile"
+    - "https://linkedin.com/in/bazen-amene"
     - "https://github.com/bazenhaile"
 
-# Analytics (uncomment when ready)
-# google_analytics: "UA-XXXXXXXXX-X"
+# Site Features
+words_per_minute: 200
+enable_copy_code_button: true
