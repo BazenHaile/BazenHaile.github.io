@@ -4,9 +4,16 @@ title: "About"
 permalink: /about/
 author_profile: true
 classes: wide
+breadcrumbs: false
+show_title: false
 ---
 
 <style>
+/* Hide the page title */
+.page__title {
+  display: none;
+}
+
 /* Matching the homepage style */
 :root {
   --primary-color: #0a1628;
