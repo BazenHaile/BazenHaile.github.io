@@ -333,7 +333,7 @@ show_title: false
 
 <div class="about-section">
   <h2><span class="icon">🏆</span> Recognition</h2>
-  <p><strong>Ireland Fellows Programme (2020)</strong> - Selected as one of only five fellows from Ethiopia for this prestigious leadership development programme, demonstrating commitment to professional growth and international collaboration.</p>
+  <p><strong>Ireland Fellows Programme </strong> - Selected as one of only five fellows from Ethiopia for this prestigious leadership development programme, demonstrating commitment to professional growth and international collaboration.</p>
 </div>
 
 <div class="about-cta">
